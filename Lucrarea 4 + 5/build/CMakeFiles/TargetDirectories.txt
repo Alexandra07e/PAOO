@@ -1,0 +1,3 @@
+/home/alexandra/paoo/lucrarea456/build/CMakeFiles/lucrarea45.dir
+/home/alexandra/paoo/lucrarea456/build/CMakeFiles/edit_cache.dir
+/home/alexandra/paoo/lucrarea456/build/CMakeFiles/rebuild_cache.dir
