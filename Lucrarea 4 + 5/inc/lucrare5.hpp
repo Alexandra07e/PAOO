@@ -4,35 +4,17 @@
 #include <cstddef>
 #include <string>
 
-// Clasa pentru Item 10 si Item 11: gestioneaza memorie din heap, deci are
-// copy ctor / operator= / destructor proprii.
+// Clasa cu memorie din heap (data_). Are nevoie de copy constructor, operator= si destructor proprii.
 class Buffer {
 public:
-    explicit Buffer(std::size_t size = 0, int fill = 0);
-    Buffer(const Buffer& rhs);       // deep copy
-    ~Buffer();
+    Buffer(std::size_t size, int fill);
+    Buffer(const Buffer& rhs);               // copiaza si datele (deep copy)
+    ~Buffer();                               // elibereaza heap-ul
 
-    Buffer& operator=(const Buffer& rhs);   // ITEM 10 + ITEM 11
-    Buffer& operator+=(int v);              // ITEM 10 (si pentru operatori compusi)
-
-    std::size_t size() const { return size_; }
-    int& operator[](std::size_t i) { return data_[i]; }
-    const int& operator[](std::size_t i) const { return data_[i]; }
-
-private:
-    std::size_t size_;
-    int* data_;
-};
-
-// ITEM 11: varianta GRESITA, doar pentru demonstratie
-class UnsafeBuffer {
-public:
-    explicit UnsafeBuffer(std::size_t size);
-    ~UnsafeBuffer();
-    UnsafeBuffer(const UnsafeBuffer&) = delete;
-    UnsafeBuffer& operator=(const UnsafeBuffer& rhs);
+    Buffer& operator=(const Buffer& rhs);    // ITEM 10 si ITEM 11
 
     std::size_t size() const { return size_; }
+    int first() const { return data_[0]; }
 private:
     std::size_t size_;
     int* data_;
@@ -42,30 +24,28 @@ private:
 class Customer {
 public:
     Customer();
-    explicit Customer(const std::string& n);
+    explicit Customer(const std::string& name);
     Customer(const Customer& rhs);
     Customer& operator=(const Customer& rhs);
-    virtual ~Customer() {}
     const std::string& name() const { return name_; }
 private:
     std::string name_;
 };
 
-// GRESIT: uita partea de baza
+// GRESIT: copiaza doar membrul propriu, uita partea de baza (Customer)
 class BadVipCustomer : public Customer {
 public:
-    BadVipCustomer(const std::string& n, int p);
+    BadVipCustomer(const std::string& name, int priority);
     BadVipCustomer(const BadVipCustomer& rhs);
-    BadVipCustomer& operator=(const BadVipCustomer& rhs);
     int priority() const { return priority_; }
 private:
     int priority_;
 };
 
-// CORECT: copiaza TOATE partile
+// CORECT: copiaza TOATE partile (baza + membrul propriu)
 class VipCustomer : public Customer {
 public:
-    VipCustomer(const std::string& n, int p);
+    VipCustomer(const std::string& name, int priority);
     VipCustomer(const VipCustomer& rhs);
     VipCustomer& operator=(const VipCustomer& rhs);
     int priority() const { return priority_; }

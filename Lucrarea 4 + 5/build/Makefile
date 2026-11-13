@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexandra/paoo/lucrarea456
+CMAKE_SOURCE_DIR = "/home/alexandra/paoo/Lucrarea 4 + 5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexandra/paoo/lucrarea456/build
+CMAKE_BINARY_DIR = "/home/alexandra/paoo/Lucrarea 4 + 5/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/paoo/lucrarea456/build/CMakeFiles /home/alexandra/paoo/lucrarea456/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexandra/paoo/Lucrarea 4 + 5/build/CMakeFiles" "/home/alexandra/paoo/Lucrarea 4 + 5/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/paoo/lucrarea456/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexandra/paoo/Lucrarea 4 + 5/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lucrarea45
+# Target rules for targets named Lucrarea45
 
 # Build rule for target.
-lucrarea45: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lucrarea45
-.PHONY : lucrarea45
+Lucrarea45: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lucrarea45
+.PHONY : Lucrarea45
 
 # fast build rule for target.
-lucrarea45/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/build
-.PHONY : lucrarea45/fast
+Lucrarea45/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/build
+.PHONY : Lucrarea45/fast
 
 src/lucrare4.o: src/lucrare4.cpp.o
 .PHONY : src/lucrare4.o
 
 # target to build an object file
 src/lucrare4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/lucrare4.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/lucrare4.cpp.o
 .PHONY : src/lucrare4.cpp.o
 
 src/lucrare4.i: src/lucrare4.cpp.i
@@ -142,7 +142,7 @@ src/lucrare4.i: src/lucrare4.cpp.i
 
 # target to preprocess a source file
 src/lucrare4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/lucrare4.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/lucrare4.cpp.i
 .PHONY : src/lucrare4.cpp.i
 
 src/lucrare4.s: src/lucrare4.cpp.s
@@ -150,7 +150,7 @@ src/lucrare4.s: src/lucrare4.cpp.s
 
 # target to generate assembly for a file
 src/lucrare4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/lucrare4.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/lucrare4.cpp.s
 .PHONY : src/lucrare4.cpp.s
 
 src/lucrare5.o: src/lucrare5.cpp.o
@@ -158,7 +158,7 @@ src/lucrare5.o: src/lucrare5.cpp.o
 
 # target to build an object file
 src/lucrare5.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/lucrare5.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/lucrare5.cpp.o
 .PHONY : src/lucrare5.cpp.o
 
 src/lucrare5.i: src/lucrare5.cpp.i
@@ -166,7 +166,7 @@ src/lucrare5.i: src/lucrare5.cpp.i
 
 # target to preprocess a source file
 src/lucrare5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/lucrare5.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/lucrare5.cpp.i
 .PHONY : src/lucrare5.cpp.i
 
 src/lucrare5.s: src/lucrare5.cpp.s
@@ -174,7 +174,7 @@ src/lucrare5.s: src/lucrare5.cpp.s
 
 # target to generate assembly for a file
 src/lucrare5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/lucrare5.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/lucrare5.cpp.s
 .PHONY : src/lucrare5.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -182,7 +182,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -190,7 +190,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -198,7 +198,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lucrarea45"
+	@echo "... Lucrarea45"
 	@echo "... src/lucrare4.o"
 	@echo "... src/lucrare4.i"
 	@echo "... src/lucrare4.s"

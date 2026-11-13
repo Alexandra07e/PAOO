@@ -54,20 +54,20 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexandra/paoo/lucrarea456
+CMAKE_SOURCE_DIR = "/home/alexandra/paoo/Lucrarea 4 + 5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexandra/paoo/lucrarea456/build
+CMAKE_BINARY_DIR = "/home/alexandra/paoo/Lucrarea 4 + 5/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lucrarea45.dir/all
+all: CMakeFiles/Lucrarea45.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/lucrarea45.dir/codegen
+codegen: CMakeFiles/Lucrarea45.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lucrarea45.dir/clean
+clean: CMakeFiles/Lucrarea45.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lucrarea45.dir
+# Target rules for target CMakeFiles/Lucrarea45.dir
 
 # All Build rule for target.
-CMakeFiles/lucrarea45.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/paoo/lucrarea456/build/CMakeFiles --progress-num=1,2,3,4 "Built target lucrarea45"
-.PHONY : CMakeFiles/lucrarea45.dir/all
+CMakeFiles/Lucrarea45.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alexandra/paoo/Lucrarea 4 + 5/build/CMakeFiles" --progress-num=1,2,3,4 "Built target Lucrarea45"
+.PHONY : CMakeFiles/Lucrarea45.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lucrarea45.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/paoo/lucrarea456/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lucrarea45.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/paoo/lucrarea456/build/CMakeFiles 0
-.PHONY : CMakeFiles/lucrarea45.dir/rule
+CMakeFiles/Lucrarea45.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexandra/paoo/Lucrarea 4 + 5/build/CMakeFiles" 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Lucrarea45.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexandra/paoo/Lucrarea 4 + 5/build/CMakeFiles" 0
+.PHONY : CMakeFiles/Lucrarea45.dir/rule
 
 # Convenience name for target.
-lucrarea45: CMakeFiles/lucrarea45.dir/rule
-.PHONY : lucrarea45
+Lucrarea45: CMakeFiles/Lucrarea45.dir/rule
+.PHONY : Lucrarea45
 
 # codegen rule for target.
-CMakeFiles/lucrarea45.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alexandra/paoo/lucrarea456/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target lucrarea45"
-.PHONY : CMakeFiles/lucrarea45.dir/codegen
+CMakeFiles/Lucrarea45.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alexandra/paoo/Lucrarea 4 + 5/build/CMakeFiles" --progress-num=1,2,3,4 "Finished codegen for target Lucrarea45"
+.PHONY : CMakeFiles/Lucrarea45.dir/codegen
 
 # clean rule for target.
-CMakeFiles/lucrarea45.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea45.dir/build.make CMakeFiles/lucrarea45.dir/clean
-.PHONY : CMakeFiles/lucrarea45.dir/clean
+CMakeFiles/Lucrarea45.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lucrarea45.dir/build.make CMakeFiles/Lucrarea45.dir/clean
+.PHONY : CMakeFiles/Lucrarea45.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

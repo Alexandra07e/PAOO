@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/Lucrarea45.dir/link.d CMakeFiles/Lucrarea45.dir/src/main.cpp.o CMakeFiles/Lucrarea45.dir/src/lucrare4.cpp.o CMakeFiles/Lucrarea45.dir/src/lucrare5.cpp.o -o Lucrarea45
